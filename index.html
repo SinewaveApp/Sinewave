@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My GitHub Page</title>
+  <style>
+    :root {
+      --bg: white;
+      --text: black;
+    }
+
+    body.dark {
+      --bg: #121212;
+      --text: #f5f5f5;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: sans-serif;
+      padding: 2rem;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    button {
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hello, GitHub Pages!</h1>
+  <p>This is a custom HTML site with dark mode toggle.</p>
+  <button onclick="document.body.classList.toggle('dark')">Toggle Dark Mode</button>
+</body>
+</html>
